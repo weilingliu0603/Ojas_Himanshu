@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Must say name here, so will access name based on image recognition -->
+        <title>Welcome Back (Employer Name)!</title>
+    </head>
+    <style></style>
+    <body>
+        <h1>What do you want to do today?</h1>
+        <br>
+        <form method="POST" action="{{ url_for('administrat') }}">
+            <label for="choice">Choose data:</label>
+            <select id="choice" name="choice">
+              <option value="Update member details">Update member details</option>
+              <option value="View daily transactions">View daily transactions</option>
+              <option value="View monthly sales revenue">View monthly sales revenue</option>
+              <option value="View member's transaction history">View member's transaction history</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

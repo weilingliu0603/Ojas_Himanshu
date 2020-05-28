@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <title>Get a Haircut!</title>
+    <!--Member ID should be automatically detected here through face recognition-->
+    <!--Code Face Rekog-->
+    <head>Welcome back (Name of member)</head>
+    <body>
+        <h1>Make a booking today!</h1>
+        <form method="POST" action="{{ url_for('booking')}}">
+            <!-- This should not be needed-->
+            <p>Enter Member ID:</p>
+            <input type="text" name="ID">
+            <br>
+            <p>Choose Services:</p>
+            <input type="checkbox" name=servies value="Cut (short length)">
+            <label for="Cut (short length)"> Cut (short length)</label>
+            <br>
+            <input type="checkbox" name=servies value="Cut (medium length)">
+            <label for="Cut (medium length)"> Cut (medium length)</label>
+            <br>
+            <input type="checkbox" name=servies value="Cut (long length)">
+            <label for="Cut (long length)"> Cut (long length)</label>
+            <br>
+            <input type="checkbox" name=servies value="Colour">
+            <label for="Colour"> Colour</label>
+            <br>
+            <input type="checkbox" name=servies value="Highlight (half head)">
+            <label for="Highlight (half head)"> Highlight (half head)</label>
+            <br>
+            <input type="checkbox" name=servies value="Highlight (full head)">
+            <label for="Highlight (full head)"> Highlight (full head)</label>
+            <br>
+            <input type="checkbox" name=servies value="Perm">
+            <label for="Perm"> Perm</label>
+            <br>
+            <input type="checkbox" name=servies value="Rebonding">
+            <label for="Rebonding"> Rebonding</label>
+            <br>
+            <input type="checkbox" name=servies value="Treatment">
+            <label for="Treatment"> Treatment</label>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

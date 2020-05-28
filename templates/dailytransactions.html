@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daily Transactions</title>
+    </head>
+    <body>
+        <h1>JP Salon's Daily Transaction Data:</h1>
+        <br>
+        <br>
+        <ul>
+            {% for row in daily %}
+              <li style="font-size: 30px; "><b>{{row}}</b> 
+            <br>
+            <ul>
+                {% for line in daily[row] %}
+                    <li>{{line[0]+' spent $'+((line[1])|string)+'. Invoice ID: '+((line[2])|string)}}</li>
+                {% endfor %}
+            </ul>
+            <br>
+            <br>
+            </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
+
+
+
+
+<!-- {{daily}} -->

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <title>View a Member's History</title>
+    <body>
+        <h1>Member's Transaction:</h1>
+        <br>
+        <br>
+        <ul>
+            {% for row in data %}
+            <li><b>Transaction Invoice Number: </b>{{row[0]}}
+                <br>
+                <b>Total amount spent: </b>${{row[1]}}
+            
+            
+            </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

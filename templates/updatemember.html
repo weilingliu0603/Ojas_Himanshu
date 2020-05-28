@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <title>Update member details</title>
+    <body>
+        <h1 style=color:darkred;>Enter respective details below</h1>
+        <br>
+        <br>
+        <form action="{{ url_for('update') }}" method="POST">
+        <p>Enter Member ID:</p>
+        <input type="text" name="ID">
+        <br>
+        <p>Email:</p>
+        <input type="text" name="Email">
+        <br>
+        <p>Contact:</p>
+        <input type="text" name="Contact">
+        <br>
+        <p>Address:</p>
+        <input type="text" name="Address">
+        <br>
+        <button type="submit">Continue</button>
+        </form>
+    </body>
+</html>

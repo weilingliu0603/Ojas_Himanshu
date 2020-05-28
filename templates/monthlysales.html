@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Monthly Revenue</title>
+    </head>
+    <body>
+        <h1>JP Salon's Monthly Revenue:</h1>
+        <br>
+        <br>
+        <ul>
+            {% for month in monthly_sales %}
+            <li style="font-size: 30px; "><b>{{months[month]}}:</b> ${{monthly_sales[month]}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
