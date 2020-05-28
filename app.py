@@ -146,6 +146,6 @@ def membership():
 
     return flask.render_template("done.html")
 
+if __name__ == '__main__':
+    app.run(debug=True, use_reloader=True)
 
-if __name__ == '__main__':  # localhost 127.0.0.1
-    app.run(port=2248, debug=True)
